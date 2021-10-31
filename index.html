@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lucky_royal</title>
+    <meta name="viewport", content="width=device-width, initial-cale=1.0">
+    <style type="text/css">
+        body
+        {
+            padding: 0px;
+            margin:0px;
+            /*background-color: #b3d9ff;*/
+            background-color: #f5f0e1;
+            font-family: sans-serif;
+        }
+        .head
+        {
+            padding: 40px;
+            text-align: center;
+            font-family: Freestyle Script;
+            font-size: 80px;
+            color: #fff;
+            /*background-color: #3399ff;*/
+            background-color: #1e3d59;
+        }
+        .note
+        {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            height: 350px;
+            font-family: Forte;
+            font-size: 25px;
+            width: 500px;
+            text-align: justify;
+            box-shadow: 7px 7px 15px gray;
+            border-radius: 30px;
+            padding: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background-color: silver;
+        }
+        input[type="text"]
+        {
+            background-color: #eee;
+            font-size: 30px;
+            font-family: sans-serif;
+            padding: 20px;
+            height: 60px;
+            box-shadow: inset -7px -7px 12px gray, inset 4px 4px 12px gray;
+            width: 450px;
+            outline: none;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: right;
+            margin-bottom: 20px;
+            position: static;
+        }
+        input[type="button"]
+        {
+            padding:10px;
+            background-color: #f1f1f1;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 5px;
+            cursor: pointer;
+            font-size: 20px;width: 100%;
+            outline: none;
+        }
+        .footer
+        {
+            /*background-color: #520066;*/
+            background-color: #ff6e40;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        img
+        {
+            width:510px;
+            border-radius: 10px;
+            height:592px;
+        }
+        .life
+        {
+            padding: 20px;
+            margin:30px;
+            /*background-color: #8f00b3;*/
+            background-color: #ffc136;
+            box-shadow: 4px 4px 8px gray;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 23px;
+            border: 3px dashed #000;
+        }
+        hr
+        {
+            /*border: 1px dashed solid #000;*/
+            border: 1.5px dashed #000;
+        }
+        button:hover
+        {
+            box-shadow: 4px 4px 7px gray, -2px -2px 5px gray;
+            /*background-color: rgba(255, 255, 153, 0.5);*/
+            background-color: rgba(237,237,237,0.9);
+        }
+        @media (max-width: 420px)
+        {
+            .head
+            {
+                font-size: 50px;
+            }
+            .life
+            {
+                padding: 5px;
+                font-size: 15px;
+            }
+            .note
+            {
+                width: 300px;
+                font-size: 17px;
+                padding: 10px;
+                margin-left: 1px;
+                border-radius: 15px;
+            }
+            input[type="text"]
+            {
+                width: 250px;
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            img
+            {
+                width:310px;
+                height:392px;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        function show(val)
+        {
+            document.getElementById("disp").value += val
+        }
+        function clearr()
+        {
+            document.getElementById("disp").value = " "
+        }
+         function showw() {
+             document.getElementById('disp').value   = 'your photo 😅🤣😂 👇'    
+            document.getElementById('my').style.visibility='visible';
+            displayRandomImage();
+      }
+      function hidee() {
+        document.getElementById('my').style.visibility='hidden';
+      }
+
+      function getRandomImage() {
+        var images = ['https://www.dropbox.com/s/iunmezo7ir8gvrt/7.jpg?raw=1', 'https://www.dropbox.com/s/135e3fmoz1p6uet/8.jpg?raw=1', 'https://www.dropbox.com/s/ahg2zp7yzjv5oyo/18.jpg?raw=1', 'https://www.dropbox.com/s/v6eox3hdkprkbq4/11.jpg?raw=1', 'https://www.dropbox.com/s/94ax5ytl8bn4vql/10.jpg?raw=1', 'https://www.dropbox.com/s/n506mieuwklku1h/19.jpg?raw=1', 'https://www.dropbox.com/s/felzocibcwybcxp/15.jpg?raw=1', 'https://www.dropbox.com/s/9xltnlw47g4d455/14.jpg?raw=1', 'https://www.dropbox.com/s/77wai7lwyyo2cyf/17.jpg?raw=1', 'https://www.dropbox.com/s/3gv0661te4yrad8/9.jpg?raw=1', 'https://www.dropbox.com/s/umrmtbx16hwzkda/12.jpg?raw=1', 'https://www.dropbox.com/s/jozazprnbq9itjd/16.jpg?raw=1',
+    'https://www.dropbox.com/s/ktjakoevdka9zhq/2.jpg?raw=1',
+    'https://www.dropbox.com/s/fh9zgroa7ox9ys1/1.jpg?raw=1']
+        var image = images[Math.floor(Math.random()*images.length)];
+        return image;
+      }
+ 
+      function displayRandomImage() {
+        var htmlImage = document.getElementById("randomImage");
+        my.src = getRandomImage();
+      }    
+    </script>
+</head>
+<body>
+    <div class="head">
+        -: Past Life :-
+    </div><center>
+        <div class="life"><h2><b><u>LIFE</u></b></h2>
+"<big>The purpose of our lives is to be happy.</big>”<br>— Dalai Lama.<br><br>
+“<big> Life is what happens when you're busy making other plans.</big>”<br>— John Lennon.<br><br>
+<p text-align=”justify”>&nbsp I think you are so beautiful/handsome in your past birth. Are you ready to see your face go and enter your month of birth in following textbox.</p><br><hr>
+<br>👇 👇<br>
+Here you can see how you were in the past<br>👇 👇👇 👇<br><br>
+        </div><br />kindly enter your month of birth,<br>here<br>
+    <div class="note">
+        <input type="text" required minlength="1" maxlength="2" id="disp" placeholder=":={|)~"  readonly >
+        <table>
+            <tr>
+
+                <td><input type="button" value="1" onclick="show('1')"/></td>
+
+                <td><input type="button" onclick="show('2')" value="2"></td>
+                <td><input type="button" onclick="show('3')" value="3"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="show('4')" value="4"></td>
+                <td><input type="button" onclick="show('5')" value="5"></td>
+                <td><input type="button" onclick="show('6')" value="6"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="show('7')" value="7"></td>
+                <td><input type="button" onclick="show('8')" value="8"></td>
+                <td><input type="button" onclick="show('9')" value="9"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="showw()" value="Go" style="background-color: rgba(51, 204, 51,0.5)"></td>
+                <td><input type="button" onclick="show('0')" value="0"</td>
+                <td><input type="button" onclick="clearr(), hidee()" value="Clr" style="background-color: rgba(204, 51, 51,0.5);"></td>
+            </tr>
+        </table>
+    </div>
+<br />wait a moment<br>your past life photo will be display here<br><br>
+    <img id="my" style="visibility:hidden"/><br><br>
+
+</center>
+<div class="footer">
+    Developed by AGNER :={|)~
+</div>
+</body>
+</html>
